@@ -49,14 +49,6 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
-          <a 
-            href="/Resume.pdf" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="px-4 py-2 bg-primary text-primary-foreground text-sm font-semibold rounded-md hover:bg-primary/90 transition-colors"
-          >
-            Download Resume
-          </a>
           </div>
 
           {/* Mobile Menu Button */}

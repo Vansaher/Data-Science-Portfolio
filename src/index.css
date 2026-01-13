@@ -6,42 +6,42 @@
 
 @layer base {
   :root {
-    --background: 222 47% 6%;
-    --foreground: 210 40% 98%;
+    /* Main Palette Mapped to HSL */
+    --background: 60 18% 97%;    /* #F6F6F2 - Light Off-white */
+    --foreground: 184 41% 37%;   /* #388087 - Dark Teal */
 
-    --card: 222 47% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;           /* White for cards to pop */
+    --card-foreground: 184 41% 37%;
 
-    --popover: 222 47% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 184 41% 37%;
 
-    --primary: 174 72% 56%;
-    --primary-foreground: 222 47% 6%;
+    --primary: 184 41% 37%;      /* #388087 - Dark Teal */
+    --primary-foreground: 60 18% 97%;
 
-    --secondary: 222 30% 14%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 141 51% 85%;    /* #C2EDCE - Mint Green */
+    --secondary-foreground: 184 41% 37%;
 
-    --muted: 222 30% 14%;
-    --muted-foreground: 215 20% 55%;
+    --muted: 190 53% 82%;        /* #BADFE7 - Light Blue */
+    --muted-foreground: 184 41% 37% / 0.7;
 
-    --accent: 270 60% 60%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 190 53% 82%;       /* #BADFE7 - Light Blue */
+    --accent-foreground: 184 41% 37%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 222 30% 18%;
-    --input: 222 30% 18%;
-    --ring: 174 72% 56%;
+    --border: 184 41% 37% / 0.15;
+    --input: 184 41% 37% / 0.15;
+    --ring: 184 41% 37%;
 
-    --radius: 0.75rem;
+    --radius: 0rem;              /* Professional sharp edges */
 
-    /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(174 72% 56%) 0%, hsl(270 60% 60%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(222 47% 6%) 0%, hsl(222 47% 12%) 50%, hsl(222 47% 6%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(222 30% 10% / 0.8) 0%, hsl(222 30% 8% / 0.6) 100%);
-    --glow-primary: 0 0 40px hsl(174 72% 56% / 0.3);
-    --glow-accent: 0 0 40px hsl(270 60% 60% / 0.3);
+    /* Custom Teal/Mint design tokens */
+    --gradient-primary: linear-gradient(135deg, #388087 0%, #6fb3b8 100%);
+    --gradient-hero: radial-gradient(circle at 50% 50%, #f6f6f2 0%, #ebefed 100%);
+    --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 242, 0.5) 100%);
+    --glow-primary: 0 0 40px rgba(56, 128, 135, 0.15);
     
     --font-display: 'Space Grotesk', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
@@ -60,6 +60,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
+    @apply tracking-tight font-bold;
   }
 
   code, pre, .font-mono {
@@ -68,6 +69,7 @@
 }
 
 @layer utilities {
+  /* Updated Contact Me / Headers to Teal */
   .text-gradient {
     @apply bg-clip-text text-transparent;
     background-image: var(--gradient-primary);
@@ -85,21 +87,19 @@
     box-shadow: var(--glow-primary);
   }
 
-  .glow-accent {
-    box-shadow: var(--glow-accent);
-  }
-
+  /* Refined Glass effect for Teal theme */
   .glass {
-    @apply backdrop-blur-xl bg-card/40 border border-border/50;
+    @apply backdrop-blur-md bg-white/40 border border-primary/10 shadow-sm;
   }
 
+  /* Modern Data-floating animation */
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
 
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-10px); }
   }
 
   .animate-pulse-slow {
@@ -107,7 +107,7 @@
   }
 
   @keyframes pulse-slow {
-    0%, 100% { opacity: 0.4; }
-    50% { opacity: 0.8; }
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
   }
 }

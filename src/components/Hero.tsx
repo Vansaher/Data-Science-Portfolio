@@ -1,104 +1,85 @@
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button"; // The missing import
+import { ArrowRight, Download } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-slow" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
-      </div>
+    <section className="min-h-[90vh] flex items-center pt-20 bg-background overflow-hidden relative">
+      {/* Abstract Background Blobs - Using your new palette */}
+      <div className="absolute top-20 right-[10%] w-72 h-72 bg-secondary/30 rounded-full blur-3xl animate-blob" />
+      <div className="absolute bottom-20 left-[10%] w-72 h-72 bg-accent/30 rounded-full blur-3xl animate-blob animation-delay-2000" />
 
-      {/* Grid pattern overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:100px_100px]" />
-
-      <div className="relative z-10 container mx-auto px-6 text-center">
-        {/* Profile Picture */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          className="mb-8"
-        >
-          <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-gradient-to-br from-primary to-accent p-1">
-            <div className="w-full h-full rounded-full bg-secondary flex items-center justify-center overflow-hidden">
-              {<img 
-                src="/MainProfile.JPG" 
-                alt="Javan Herlambang" 
-                className="w-full h-full object-cover rounded-full" 
-              />}
-              <span className="text-4xl md:text-5xl text-muted-foreground"></span>
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          
+          {/* Left Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <span className="font-mono text-primary font-bold tracking-widest uppercase text-sm block mb-4">
+              // Data Scientist & AI Engineering Enthusiast
+            </span>
+            <h1 className="text-5xl md:text-7xl font-black text-primary leading-[1.1] mb-6">
+              Javan <br />
+              <span className="text-primary-light">Herlambang</span>
+            </h1>
+            <p className="text-lg md:text-xl text-primary/70 max-w-lg mb-10 leading-relaxed">
+              Final-year Computer Science student specializing in data science, AI, and building data-driven solutions for real-world impact.
+            </p>
+            
+            <div className="flex flex-wrap gap-4">
+              <Button 
+                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-none h-auto transition-all group"
+              >
+                View Projects
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                asChild
+                className="border-primary text-primary hover:bg-primary/5 px-8 py-6 text-lg rounded-none h-auto"
+              >
+                <a href="/Resume.pdf" download>
+                  <Download className="mr-2 w-5 h-5" />
+                  Download Resume
+                </a>
+              </Button>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-        >
-          <span className="inline-block font-mono text-primary text-sm tracking-wider mb-6">
-            // data science & ai enthusiast
-          </span>
-        </motion.div>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight"
-        >
-          <span className="text-foreground">Javan</span>
-          <br />
-          <span className="text-gradient">Herlambang</span>
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12"
-        >
-          Final-year Computer Science student specializing in data science, AI, 
-          and building data-driven solutions for real-world impact.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-wrap justify-center gap-4"
-        >
-          <a
-            href="#projects"
-            className="px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg glow-primary hover:scale-105 transition-transform"
+          {/* Right Image Content */}
+          <motion.div
+            className="relative flex justify-center lg:justify-end"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
           >
-            View Projects
-          </a>
-          <a
-            href="#contact"
-            className="px-8 py-4 glass rounded-lg font-semibold hover:bg-secondary/50 transition-colors"
-          >
-            Get in Touch
-          </a>
-        </motion.div>
+            {/* Geometric Frame Design */}
+            <div className="relative w-full max-w-md">
+              <div className="absolute -inset-4 border-2 border-primary/20 translate-x-4 translate-y-4 -z-10" />
+              <div className="absolute -inset-4 border-2 border-secondary translate-x-2 translate-y-2 -z-10" />
+              
+              <div className="aspect-[4/5] overflow-hidden bg-accent/20">
+                <img
+                  src="/MainProfile.JPG" // Ensure this is in your /public folder
+                  alt="Javan Herlambang"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                />
+              </div>
+              
+              {/* Badge for UPM */}
+              <div className="absolute -bottom-6 -left-6 bg-primary text-white p-4 font-mono text-xs uppercase tracking-tighter shadow-xl">
+                UPM Bachelor <br /> CS (Hons)
+              </div>
+            </div>
+          </motion.div>
+
+        </div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <ChevronDown className="w-6 h-6 text-muted-foreground" />
-        </motion.div>
-      </motion.div>
     </section>
   );
 };

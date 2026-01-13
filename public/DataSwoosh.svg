@@ -1,0 +1,15 @@
+<svg width="2000" height="100" viewBox="0 0 2000 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .code-text { 
+      font-family: 'JetBrains Mono', monospace; 
+      font-size: 14px; 
+      fill: #388087; 
+      font-weight: 800;
+    }
+    .scroll { animation: scroll 40s linear infinite; }
+    @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  </style>
+  <text y="60" class="code-text scroll">
+    IMPORT_PANDAS... MODEL_FIT... .PREDICT()... XGBOOST_OPTIMIZE... 0x1A4_STREAM... (Repeat text to 2000px)
+  </text>
+</svg>
