@@ -17,7 +17,7 @@ const projects = [
   {
     title: "Stroke Prediction for Early Intervention & Patient Stratification",
     description: "Applied machine learning to predict stroke risk based on patient health records, using ADASYN for class imbalance and optimizing decision thresholds for high recall.",
-    image: "public/Stroke Prediction.png",
+    image: "/Stroke Prediction.png",
     tags: ["Python", "Machine Learning", "Logistic Regression", "Random Forest", "XGBoost"],
     github: "https://github.com/Vansaher/Stroke-Prediction-For-Early-Intervention-And-Patient-Stratification/blob/master/README.md",
     demo: "https://sites.google.com/view/dataminingprojectupm/project-overview?authuser=0", 
@@ -26,7 +26,7 @@ const projects = [
   {
     title: "Personal Finance Tracker Dashboard with Forecasting",
     description: "A Python-based tracker that extracts bank statement data, cleans transactions, and forecasts future spending using ARIMA models. Visualized through an interactive Streamlit dashboard.",
-    image: "public/Finance Tracker.png", 
+    image: "/Finance Tracker.png", 
     tags: ["Python", "Streamlit", "ARIMA", "Data Cleaning", "Financial Analysis"],
     github: "https://github.com/Vansaher/Personal-Finance-Tracker", 
     demo: "https://personal-finance-tracker-vansaher.streamlit.app/", 
@@ -44,7 +44,7 @@ const projects = [
   {
     title: "SpaceX Falcon 9 First Stage Landing Prediction",
     description: "A real-time, interactive dashboard built with Dash and Plotly to analyze SpaceX launch data. Features include mission success rate exploration, payload correlations, and launch site performance analytics.",
-    image: "public/SpaceX.png",
+    image: "/SpaceX.png",
     tags: ["Python", "Dash", "Plotly", "Data Analysis", "Predictive Modeling"],
     github: "https://github.com/Vansaher/SpaceX-Falcon-9-first-stage-Landing-Prediction",
     demo: "https://f89ba3a8-a261-4854-996d-022b38af957c.plotly.app",
@@ -53,7 +53,7 @@ const projects = [
   {
     title: "Interactive Automobile Sales Dashboard With Recession Period Analytics",
     description: "A comprehensive Plotly Dash application for exploring historical automobile sales trends. Features dynamic yearly and monthly reporting, with a specialized focus on visualizing the impact of economic recession periods on different vehicle types.",
-    image: "public/Automobile Sales.png", 
+    image: "/Automobile Sales.png", 
     tags: ["Python", "Dash", "Plotly", "Pandas", "Data Visualization"],
     github: "https://github.com/Vansaher/Interactive-Automobile-Sales-Dashboard-With-Recession-Period-Analytics",
     demo: "https://3694669d-58a7-40d3-b3ac-b4c60cdea3f1.plotly.app/", // Add your live link here if you have it hosted on Render or PythonAnywhere
