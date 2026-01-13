@@ -9,7 +9,7 @@ const projects = [
     description: "In-progress Final Year Project tackling the lack of information on the dynamics of ethnic composition. Uses time-series forecasting combined with geopolitical NLP analysis to support policy planning and provide actionable insights for decision-makers.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
     tags: ["Python", "Time-Series", "NLP", "Policy Analytics"],
-    github: "#",
+    github: "https://github.com/Vansaher/Forecasting-Ethnic-composition-Using-time-series-and-Geopolitical-NLP-to-Support-Policy-Planning",
     demo: "#",
     featured: true,
     status: "In Progress",
