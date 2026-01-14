@@ -57,7 +57,7 @@ const About = () => {
                   final-year student with a deep focus on data science and machine learning.
                 </p>
                 <p>
-                  My toolkit includes <span className="text-primary font-bold">Python, SQL, and NLP</span>, 
+                  My toolkit includes <span className="text-primary font-bold">Python, SQL, </span> and various <span className="text-primary font-bold"> Data Visualization tools</span>, 
                   with hands-on experience in statistical modeling and dashboard development.
                 </p>
                 <div className="p-4 bg-secondary/30 border-l-4 border-primary mt-4">
