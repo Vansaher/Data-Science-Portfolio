@@ -1,5 +1,5 @@
-# Data Science Portfolio | Tech Stack & Architecture
-This is a personal portfolio built with a modern web development stack to showcase data science projects with speed and precision.
+# Portfolio | Tech Stack & Architecture
+This is a personal portfolio built with a modern web development stack to showcase software engineering, data science, and AI projects with speed and precision.
 
 ## 🛠 Tech Stack
 - **Framework:** React 18 with TypeScript for type-safe component development.

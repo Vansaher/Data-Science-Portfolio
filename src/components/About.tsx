@@ -20,7 +20,7 @@ const About = () => {
             // about me
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-primary mt-4 mb-10">
-            Turning Data Into <span className="text-primary-light">Stories.</span>
+            Building Software, <span className="text-primary-light">Driven by Data.</span>
           </h2>
 
           <div className="glass p-8 md:p-12 border-2 border-primary/10">
@@ -47,28 +47,48 @@ const About = () => {
                     <p className="text-primary font-bold text-sm">B.Sc. Computer Science</p>
                     <p className="text-primary/70 text-xs">Universiti Putra Malaysia</p>
                   </div>
+                  <div>
+                    <h3 className="font-mono text-[10px] uppercase tracking-widest text-primary/60 mb-1">Awards</h3>
+                    <ul className="space-y-1">
+                      <li className="text-primary/70 text-xs">2x Dean's List Awardee</li>
+                      <li className="text-primary/70 text-xs">Best Computer Science Award (Final Year Project)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-mono text-[10px] uppercase tracking-widest text-primary/60 mb-1">Certifications</h3>
+                    <ul className="space-y-1">
+                      <li className="text-primary/70 text-xs">IBM Data Science Professional Certificate</li>
+                      <li className="text-primary/70 text-xs">Microsoft Data Visualization Professional Certificate</li>
+                      <li className="text-primary/70 text-xs">AWS Academy Graduate</li>
+                      <li className="text-primary/70 text-xs">Deeplearning.AI Generative AI for Software Development</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
               {/* Main Narrative */}
               <div className="md:col-span-2 space-y-6 text-primary/80 leading-relaxed text-lg">
                 <p>
-                  Pursuing a Bachelor of Computer Science at <span className="text-primary font-bold">Universiti Putra Malaysia</span>, I am a 
-                  final-year student with a deep focus on data science and machine learning.
+                  Pursuing a Bachelor of Computer Science at <span className="text-primary font-bold">Universiti Putra Malaysia</span>, I am a
+                  final-year student with a strong foundation in both software engineering and data science.
                 </p>
                 <p>
-                  My toolkit includes <span className="text-primary font-bold">Python, SQL, </span> and various <span className="text-primary font-bold"> Data Visualization tools</span>, 
-                  with hands-on experience in statistical modeling and dashboard development.
+                  My toolkit spans <span className="text-primary font-bold">Python, SQL, JavaScript, </span> and frameworks like <span className="text-primary font-bold">React and Node.js</span>,
+                  with hands-on experience in full-stack web development, statistical modeling, and dashboard development.
+                </p>
+                <p>
+                  During my internship at <span className="text-primary font-bold">AMAST Sdn Bhd</span>, I built a multi-tenant CRM system end-to-end,
+                  gaining practical experience shipping production-grade web applications.
                 </p>
                 <div className="p-4 bg-secondary/30 border-l-4 border-primary mt-4">
                   <p className="text-primary italic font-medium">
-                    Currently focussed on my Final Year Project <span className="text-primary font-bold">"Forecasting Ethnic Composition using Time-Series 
-                    and Geopolitical NLP to Support Policy Planning."</span>
+                    My Final Year Project <span className="text-primary font-bold">"Forecasting Ethnic Composition using Time-Series
+                    and Geopolitical NLP to Support Policy Planning"</span> won the <span className="text-primary font-bold">Best Computer Science Award — CSIT-UPM iFYP2026</span>.
                   </p>
                 </div>
                 <p>
-                  I believe in combining technical rigor with creative problem-solving to 
-                  deliver insights that drive meaningful decisions.
+                  I believe in combining technical rigor with creative problem-solving to
+                  deliver software and insights that drive meaningful decisions.
                 </p>
               </div>
             </div>

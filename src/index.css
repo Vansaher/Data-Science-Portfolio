@@ -7,7 +7,7 @@
 @layer base {
   :root {
     /* Main Palette Mapped to HSL */
-    --background: 60 18% 97%;    /* #F6F6F2 - Light Off-white */
+    --background: 60 14% 92%;    /* Slightly deeper off-white for more contrast against cards */
     --foreground: 184 41% 37%;   /* #388087 - Dark Teal */
 
     --card: 0 0% 100%;           /* White for cards to pop */
@@ -89,7 +89,7 @@
 
   /* Refined Glass effect for Teal theme */
   .glass {
-    @apply backdrop-blur-md bg-white/40 border border-primary/10 shadow-sm;
+    @apply backdrop-blur-md bg-white/70 border border-primary/20 shadow-md;
   }
 
   /* Modern Data-floating animation */

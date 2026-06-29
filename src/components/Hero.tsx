@@ -19,14 +19,14 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="font-mono text-primary font-bold tracking-widest uppercase text-sm block mb-4">
-              // Data Scientist & AI Engineering Enthusiast
+              // Software Engineer, Data Scientist & AI Enthusiast
             </span>
             <h1 className="text-5xl md:text-7xl font-black text-primary leading-[1.1] mb-6">
               Javan <br />
               <span className="text-primary-light">Herlambang</span>
             </h1>
             <p className="text-lg md:text-xl text-primary/70 max-w-lg mb-10 leading-relaxed">
-              Final-year Computer Science student specializing in data science, AI, and building data-driven solutions for real-world impact.
+              Final-year Computer Science student building full-stack web applications and data-driven, AI-powered solutions for real-world impact.
             </p>
             
             <div className="flex flex-wrap gap-4">

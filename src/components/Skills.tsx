@@ -32,6 +32,25 @@ const skillCategories = [
     ],
   },
   {
+    title: "Web Development",
+    skills: [
+      { name: "React", level: 4 },
+      { name: "Node.js / Express", level: 4 },
+      { name: "MySQL", level: 4 },
+      { name: "REST APIs / JWT Auth", level: 4 },
+      { name: "Sequelize / SQLite", level: 3 },
+    ],
+  },
+  {
+    title: "AI Integration & Automation",
+    skills: [
+      { name: "Alibaba Qwen LLM", level: 4 },
+      { name: "Apollo.io API", level: 3 },
+      { name: "Apify / Web Scraping", level: 3 },
+      { name: "Chrome Extension Dev (MV3)", level: 3 },
+    ],
+  },
+  {
     title: "Tools & Platforms",
     skills: [
       { name: "Spark", level: 3 },
